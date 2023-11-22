@@ -1,0 +1,45 @@
+class fabbs {
+    public static void main(String[] args) {
+        pen mypen = new pen();
+        book mybook = new book();
+        shoe myshoe= new shoe();
+
+        
+        mypen.write();
+        mybook.redd();
+        myshoe.clean();
+        myshoe.redd();
+    }
+}
+
+interface writes {
+    void write();
+}
+
+interface red{
+    void redd();
+}
+class pen implements write {
+    public void writes() {
+        System.out.println("pen is writting");
+    }
+}
+class book implements redd {
+    @Override
+    public void red() {
+        System.out.println("Fish is swimming");
+    }
+}
+
+class shoe implements clean, redd{
+    @Override
+    public void redd() {
+        System.out.println("well done");
+    }
+
+    @Override
+    public void redd() {
+        System.out.println("book is red");
+    }
+}
+
